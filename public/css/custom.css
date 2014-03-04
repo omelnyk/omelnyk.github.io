@@ -1,0 +1,27 @@
+/*
+ * Sidebar
+ */
+.sidebar-sticky {
+  height: 96%;
+}
+.sidebar h1 {
+  font-size: 1.75rem;
+  font-family: inherit;
+}
+.sidebar-nav li {
+  padding: 0.5rem 1.5rem;
+  border-top: 1px dashed rgba(255,255,255,.5);
+}
+.sidebar-nav li:last-child {
+  border-bottom: 1px dashed rgba(255,255,255,.5);
+}
+.copyright {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+@media (min-width: 48rem) {
+  .copyright {
+    position: absolute;
+    bottom: 0;
+  }
+}
