@@ -10,7 +10,7 @@ html {
  * Sidebar
  */
 .sidebar-sticky {
-  height: 96%;
+  top: 1rem;
 }
 .sidebar h1 {
   font-size: 1.75rem;
