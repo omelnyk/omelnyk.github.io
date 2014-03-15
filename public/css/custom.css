@@ -9,8 +9,21 @@ html {
 /*
  * Sidebar
  */
+.sidebar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .sidebar-sticky {
-  top: 1rem;
+  position: static;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.sidebar-sticky > * {
+  display: table-row;
+}
+.sidebar-sticky > .filler {
+  height: 100%;
 }
 .sidebar h1 {
   font-size: 1.75rem;
@@ -27,10 +40,4 @@ html {
 .copyright {
   margin-top: 1rem;
   margin-bottom: 0;
-}
-@media (min-width: 48rem) {
-  .copyright {
-    position: absolute;
-    bottom: 0;
-  }
 }
