@@ -10,25 +10,31 @@ html {
  * Sidebar
  */
 .sidebar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .sidebar-sticky {
   position: static;
   display: table;
   height: 100%;
   width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
 }
 .sidebar-sticky > * {
   display: table-row;
+  height: intrinsic;
 }
 .sidebar-sticky > .filler {
-  height: 100%;
+  height: auto;
 }
 .sidebar h1 {
   font-size: 1.75rem;
   font-family: inherit;
   font-weight: 500;
+}
+.lead {
+  margin-bottom: 0;
 }
 .sidebar-nav li {
   padding: 0.5rem 1.5rem;
@@ -38,6 +44,23 @@ html {
   border-bottom: 1px dashed rgba(255,255,255,.5);
 }
 .copyright {
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 0;
+}
+#lifestream {
+  position: relative;
+  font-size: 65%;
+  width: auto;
+  height: 10rem;
+}
+@media (min-width: 48rem) {
+  #lifestream {
+    height: 100%;
+  }
+}
+#lifestream ul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
 }
